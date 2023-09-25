@@ -82,6 +82,11 @@ nav a{
     color: aliceblue;
 
   }
+
+  main a:hover{
+    color: aliceblue;
+
+  }
   
 .page-wrapper {
     max-width: 90%;
@@ -106,6 +111,10 @@ nav a{
     line-height: 1.5;
     
 }
+.page-section div{
+    flex: 0 0 80%;
+}
+
 .flexcontainer{
     display: flex;
     flex-wrap: wrap;
@@ -113,17 +122,36 @@ nav a{
 }
 
 .flex-item{
-    border: 5px solid greenyellow;
+    border: 5px solid rgb(41, 149, 222);
     background-color: aqua;
     color: white;
     min-height: 150px;
     max-height: 150px;
-    flex-basis: calc(50%-1em);/* took this from the index sample*/
+    max-width: 400px;
     display: flex;
+    flex-basis: calc(50%);
     align-items: flex-end;
     padding: 10px;
-    
+    margin: 0.5em;
 }
+/* took this from sample */
+
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item div {
+  background-color: var(--mainback);
+  padding: 10px 10px;
+}
+
+.flex-item h3 {
+  font-size: 2.0rem;
+}
+
+
+
 /* media queries for screen size below 980 px*/
 @media screen and (max-width: 980px) {
     header {
@@ -143,4 +171,9 @@ nav a{
         justify-content: center;
       }
     
+}
+
+/* images for the work area*/
+.surfreport{
+    background-image: url("../images/02-portfolio-4.jpg");
 }
