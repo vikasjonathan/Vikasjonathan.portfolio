@@ -1,0 +1,146 @@
+:root{
+    --mainback: rgb(63, 130, 143);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--mainback)
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+header{
+    display:flex;
+    padding: 15px 0 15px 0;
+    flex-wrap: wrap;
+    background-color: rgba(49, 52, 61, 1);
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; /* to create space between name and Nav bar*/
+}
+
+header h1 {
+    color: white;
+    background-color: var(--mainback);
+    padding: 5px 10px;
+    display: inline;
+    margin: 15px 0 0 0;
+    margin-left: 35px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 10px;
+    color:var(--mainback);
+    font-size: 1.7rem;
+}
+
+.herobanner{
+    background-color: var(--mainback);
+    display: flex;    
+    min-height: 30vh;
+    text-align: right;
+    justify-content: center;
+    background-image: url("../images/02-hero-bg.jpg") ;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.herobanner h2 {
+    background-color: var(--mainback);
+    margin: 0;
+    padding: 5px 10px ;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    display: inline;
+}
+
+.herobanner div {
+    flex: 0 0 90%;
+  }
+
+  nav a:hover{
+    background-color: var(--mainback);
+    color: aliceblue;
+
+  }
+  
+.page-wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+.page-section{
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    
+}
+.page-section  h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 5px solid black;
+    font-size: 3.0rem;
+    line-height: 1.5;
+    
+}
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item{
+    border: 5px solid greenyellow;
+    background-color: aqua;
+    color: white;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50%-1em);/* took this from the index sample*/
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    
+}
+/* media queries for screen size below 980 px*/
+@media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 0px;
+        margin: 0 0 15px 0;
+        font-size: 10vw;
+        color: rgb(255, 255, 255);
+      }
+    header nav {
+        justify-content: center;
+      }
+    
+}
