@@ -171,7 +171,16 @@ nav a{
     header nav {
         justify-content: center;
       }
-    
+
+    .page-section  div {
+        flex: 0 0 100%;
+    }  
+    .page-section h2{
+        border-right: none;
+        text-align: center;
+        flex: 100%;
+    }
+
 }
 
 
