@@ -101,7 +101,9 @@ nav a{
 
 .page-section  h2 {
     border-right: 5px solid black;
-    font-size: 3.0rem;
+    font-size: 2.0rem;
+    width: 200px;
+    
 }
 
 .flexcontainer{
@@ -134,7 +136,19 @@ nav a{
     background-color: rgb(27, 50, 167);
 }
 
-
+#work-one{
+    font-size: 2.0em;
+    background-image: url(../images/02-portfolio-4.jpg);
+    background-size: 100vh 30vh;
+    display: flex;
+    color: rgb(17, 0, 0);
+    min-height: 30vh;
+    min-width: 100vh;
+    background-position: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
 /* media queries for screen size below 980 px*/
 @media screen and (max-width: 980px) {
     header {
