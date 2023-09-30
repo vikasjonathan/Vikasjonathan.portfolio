@@ -83,7 +83,9 @@ nav a{
 
   }
 
-   
+  #circle{
+    width:100px;
+    border-radius: 50%;  } /*used https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rounded_images*/
 
  
 .page-section{
