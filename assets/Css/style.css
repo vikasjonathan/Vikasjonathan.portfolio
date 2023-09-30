@@ -122,10 +122,11 @@ nav a{
   }
 .page-section a{
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
     margin-right: 10px;
     color: white;
     font-size: 1.7rem;
+    
 }
 #contact{
     color: aliceblue;
