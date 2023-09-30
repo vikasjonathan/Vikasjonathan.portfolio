@@ -156,6 +156,11 @@ nav a{
     
     
 }
+#work p:hover {
+    transform: scale(150%); /* used https://www.educative.io/answers/how-to-enlarge-an-image-on-hover-in-html*/
+
+}
+
 /* media queries for screen size below 980 px*/
 @media screen and (max-width: 980px) {
     header {
